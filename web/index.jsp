@@ -216,7 +216,7 @@
                     <img class="portfolio-projects--image" src="static/card_star.png">
                 </div>
             </div>
-            <div class="col-sm-2 col-md-4" id="chart" ">
+            <div class="col-sm-2 col-md-4" id="chart">               
                 <script charset="utf-8" src="https://cdn.jsdelivr.net/npm/echarts@5.2.0/dist/echarts.js"></script>
                     <script type="text/javascript">
                         var chart = document.getElementById("chart");
