@@ -19,7 +19,7 @@
         <link href="static/styles.css" rel="stylesheet">
     </head>
     <body>
-        <script>
+        <code>
             <%
                 JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/CAIXA_ANDRE/languages");
             System.out.println(json.toString());
@@ -42,7 +42,32 @@
                     
         
             %>
-        </script>
+        </code>
+        
+        <code>
+            <%
+                JSONObject json2 = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/NetbeansCurriculo/languages");
+            System.out.println(json2.toString());
+            System.out.println(json2.length());
+            System.out.println(json2.names());
+            System.out.println(json2.get("HTML"));
+            
+            int num_lang2 = json2.length();
+            
+            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
+            System.out.println(nomes2[0]);
+            
+            
+            int aux = 0;
+
+            String[] valor2 = null;;
+            
+            
+                      
+                    
+        
+            %>
+        </code>
         
         <header id="header" class="d-flex flex-column justify-content-center">
 
@@ -213,7 +238,7 @@
             </div>
             <div class="col-sm-2 col-md-4 text-center">
                 <div class="polaroid">
-                    <img class="portfolio-projects--image" src="static/card_star.png">
+                    <img class="portfolio-projects--image" src="static/starbuckslogin.">
                 </div>
             </div>
             <div class="col-sm-2 col-md-4" id="chart">               
@@ -255,7 +280,59 @@
                           myChart.setOption(option, true);
                     </script>
             </div>
-          </div>  
+          </div>
+                          
+          <div class="row">
+            <div class="col-sm-2 col-md-4"> 
+                <h3 class="portfolio-projects--title">Starbucks</h3>
+                <h5 class="portfolio-projects--desc">Software de caixa registradora</h5>
+            </div>
+            <div class="col-sm-2 col-md-4 text-center">
+                <div class="polaroid">
+                    <img class="portfolio-projects--image" src="static/card_star.png">
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-4" id="chart2">               
+                <script charset="utf-8" src="https://cdn.jsdelivr.net/npm/echarts@5.2.0/dist/echarts.js"></script>
+                    <script type="text/javascript">
+                        var chart2 = document.getElementById("chart2");
+                        var myChart2 = echarts.init(chart2);
+                        var option;
+
+                        option = {
+                            tooltip: {
+                              trigger: 'item'
+                            },
+                            series: [
+                              {
+                                type: 'pie',
+                                radius: '50%',
+                                data: [
+                                    { value: <%= json2.get("Java") %>, name: '<%= nomes2[0] %>' },
+                                  { value: <%= json2.get("CSS") %>, name: '<%= nomes2[1] %>' },
+                                  { value: <%= json2.get("JavaScript") %>, name: '<%= nomes2[2] %>' },
+                                  { value: <%= json2.get("HTML") %>, name: '<%= nomes2[3] %>' }
+                                ],
+                                label: {
+                                    position: 'outer',
+                                    alignTo: 'labelLine',
+                                    bleedMargin: 5
+                                  },
+                                emphasis: {
+                                  itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                  }
+                                }
+                              }
+                            ]
+                          };
+                          myChart2.setOption(option, true);
+                    </script>
+            </div>
+          </div>
+                                
         </div>
       </section>
 

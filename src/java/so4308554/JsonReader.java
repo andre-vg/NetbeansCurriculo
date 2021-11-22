@@ -48,29 +48,21 @@ import java.lang.reflect.Array;
         }
 
         public static void main(String[] args) throws IOException, JSONException {
-            JSONObject json = readJsonFromUrl("https://api.github.com/repos/andre-vg/CAIXA_ANDRE/languages");
-            System.out.println(json.toString());
-            System.out.println(json.length());
-            System.out.println(json.names());
-            System.out.println(json.get("HTML"));
+            JSONObject json2 = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/NetbeansCurriculo/languages");
+            System.out.println(json2.toString());
+            System.out.println(json2.length());
+            System.out.println(json2.names());
+            System.out.println(json2.get("HTML"));
             
-            int num_lang = json.length();
+            int num_lang2 = json2.length();
             
-            String[] nomes = json.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
-            System.out.println(nomes[0]);
-            
-            Object[] valor = null;
-            valor[0] = json.get("CSS");
-            System.out.println(nomes[0]);
-            valor[0] = json.get("CSS");
-            valor[1] = json.get("JavaScript");
-            valor[2] = json.get("HTML");
-            valor[3] = json.get("Python");
+            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
+            System.out.println(nomes2[0]);
             
             
-            
-            int aux2 = 0;
-//            System.out.println(aux);
+            int aux = 0;
+
+            String[] valor2 = null;;
                       
                     
         }
