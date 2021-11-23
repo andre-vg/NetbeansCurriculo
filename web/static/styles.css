@@ -120,6 +120,7 @@ h6 {
   display: block;
 }
 
+
 #hero {
   width: 90%;
   height: 100vh;
@@ -573,8 +574,12 @@ input[type="email"] {
   margin-left: 47%;
 }
 .portfolio-projects--image {
-  width: 50%;
-  height: auto;
+  width: auto;
+  height: 250px;
   box-shadow: 10px 10px 5px #aaaaaa;
+  border-radius: 130px;
+}
+.portfolio-projects--title{
+    margin-top: 15%;
 }
 

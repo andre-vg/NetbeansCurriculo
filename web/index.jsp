@@ -23,23 +23,14 @@
             <%
                 JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/CAIXA_ANDRE/languages");
             System.out.println(json.toString());
-            System.out.println(json.length());
-            System.out.println(json.names());
-            System.out.println(json.get("HTML"));
             
             int num_lang = json.length();
             
-            String[] nomes = json.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
-            System.out.println(nomes[0]);
-            
+            String[] nomes = json.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");            
             
             int aux2 = 0;
 
-            String[] valor = null;
-            
-            
-                      
-                    
+            String[] valor = null;                   
         
             %>
         </code>
@@ -47,25 +38,15 @@
         <code>
             <%
                 JSONObject json2 = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/NetbeansCurriculo/languages");
-            System.out.println(json2.toString());
-            System.out.println(json2.length());
-            System.out.println(json2.names());
-            System.out.println(json2.get("HTML"));
             
             int num_lang2 = json2.length();
             
-            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
-            System.out.println(nomes2[0]);
-            
+            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");            
             
             int aux = 0;
 
             String[] valor2 = null;;
-            
-            
-                      
-                    
-        
+   
             %>
         </code>
         
@@ -238,7 +219,7 @@
             </div>
             <div class="col-sm-2 col-md-4 text-center">
                 <div class="polaroid">
-                    <img class="portfolio-projects--image" src="static/starbuckslogin.">
+                    <a href="https://github.com/andre-vg/CAIXA_ANDRE"><img class="portfolio-projects--image" src="static/starbuckslogin.png"></a>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4" id="chart">               
@@ -281,7 +262,7 @@
                     </script>
             </div>
           </div>
-                          
+                                <br><br>           
           <div class="row">
             <div class="col-sm-2 col-md-4"> 
                 <h3 class="portfolio-projects--title">Starbucks</h3>
@@ -289,7 +270,7 @@
             </div>
             <div class="col-sm-2 col-md-4 text-center">
                 <div class="polaroid">
-                    <img class="portfolio-projects--image" src="static/card_star.png">
+                    <a href="https://github.com/andre-vg/NetbeansCurriculo"><img class="portfolio-projects--image" src="static/logoroxoclaro.jpg" ></a>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4" id="chart2">               
