@@ -99,10 +99,8 @@
                     <img src="static/perfilRoxa.png" class="img-fluid" alt="" style="border-radius: 1000px; box-shadow: 10px 10px 5px #aaaaaa;">
                   </div>
                   <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>Algumas Informções Úteis:</h3>
-                    <p class="fst-italic">
-                      Abaixo estão algumas informações pessoais.
-                    </p>
+                    <h3>Informações Pessoais:</h3>
+                    <br>
                     <div class="row">
                       <div class="col-lg-6">
                         <ul>
@@ -265,8 +263,8 @@
                                 <br><br>           
           <div class="row">
             <div class="col-sm-2 col-md-4"> 
-                <h3 class="portfolio-projects--title">Starbucks</h3>
-                <h5 class="portfolio-projects--desc">Software de caixa registradora</h5>
+                <h3 class="portfolio-projects--title">Currículo</h3>
+                <h5 class="portfolio-projects--desc">Projeto do Curriculo Web</h5>
             </div>
             <div class="col-sm-2 col-md-4 text-center">
                 <div class="polaroid">
