@@ -13,7 +13,7 @@
 Como Rodar?
 =================
 <!--ts-->
-* [Sobre](#Sobre)
+* [Passos](#Passos)
      * O projeto foi desenvolvido na IDE netbeans 8.2, utilizando jdk 8 e apache tomcat 9.<br>
      * Apenas rode o projeto, o index.html redireciona para o index.jsp então você não terá problemas.<br>
      * Estou utilizando a API do github para os charts dos projetos, ela tem um limite de requests por hora, então se o projeto não rodar depois de alguns refresh's aguarde 1 hr.
