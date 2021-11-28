@@ -19,7 +19,7 @@
         <link href="static/styles.css" rel="stylesheet">
     </head>
     <body>
-        <code>
+       <!-- <code>
             <%
                 JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/CAIXA_ANDRE/languages");
             System.out.println(json.toString());
@@ -30,7 +30,7 @@
             
             int aux2 = 0;
 
-            String[] valor = null;                   
+                              
         
             %>
         </code>
@@ -45,10 +45,11 @@
             
             int aux = 0;
 
-            String[] valor2 = null;;
+            
    
             %>
         </code>
+        !-->
         
         <header id="header" class="d-flex flex-column justify-content-center">
 
@@ -235,10 +236,10 @@
                                 type: 'pie',
                                 radius: '50%',
                                 data: [
-                                    { value: <%= json.get("CSS") %>, name: '<%= nomes[0] %>' },
-                                  { value: <%= json.get("JavaScript") %>, name: '<%= nomes[1] %>' },
-                                  { value: <%= json.get("HTML") %>, name: '<%= nomes[2] %>' },
-                                  { value: <%= json.get("Python") %>, name: '<%= nomes[3] %>' }
+                                    { value: <%= json.get("CSS") %>, name: '<%=nomes[0] %>' },
+                                  { value: <%= json.get("JavaScript") %>, name: '<%=nomes[1] %>' },
+                                  { value: <%= json.get("HTML") %>, name: '<%=nomes[2] %>' },
+                                  { value: <%= json.get("Python") %>, name: '<%=nomes[3] %>' }
                                 ],
                                 label: {
                                     position: 'outer',

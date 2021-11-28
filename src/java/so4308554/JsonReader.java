@@ -49,20 +49,16 @@ import java.lang.reflect.Array;
 
         public static void main(String[] args) throws IOException, JSONException {
             JSONObject json2 = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/NetbeansCurriculo/languages");
-            System.out.println(json2.toString());
-            System.out.println(json2.length());
-            System.out.println(json2.names());
-            System.out.println(json2.get("HTML"));
             
             int num_lang2 = json2.length();
             
-            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");
-            System.out.println(nomes2[0]);
-            
+            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");            
             
             int aux = 0;
+            System.out.println(json2.toString());
 
-            String[] valor2 = null;;
+            System.out.println(json2.get("CSS"));
+            System.out.println(nomes2[2]);
                       
                     
         }
