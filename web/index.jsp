@@ -12,6 +12,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Curriculo-Web</title>
+        <link rel="shortcut icon" href="logoroxoclaro.ico">
         <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="static/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <link href="static/boxicons/css/boxicons.min.css" rel="stylesheet">
