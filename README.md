@@ -19,6 +19,8 @@ Como Rodar?
      * Estou utilizando a API do github para os charts dos projetos, ela tem um limite de requests por hora, então se o projeto não rodar depois de alguns refresh's aguarde 1 hr.
 <!--te-->
 <br>
+Caso prefira, você pode acessar a web page por meio do link abaixo
+    <a href="http://testebrasil-env.eba-9tcjp39n.sa-east-1.elasticbeanstalk.com/index.jsp"><p>http://testebrasil-env.eba-9tcjp39n.sa-east-1.elasticbeanstalk.com/index.jsp</p></a>
 
 # Clone este repositório
 $ git clone https://github.com/andre-vg/NetbeansCurriculo.git
