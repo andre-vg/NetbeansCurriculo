@@ -358,7 +358,7 @@
         <footer id="footer">
             <div class="container">
               <h3>André Gonçalves</h3>
-              <p>"<.p> Coloque um texto inspirador aqui <./p>"</p>
+              <p>Mar calmo nunca fez bom marinheiro...</p>
               <div class="social">
                 <a href="https://twitter.com/dedez00" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://twitch.tv/dedz_1" class="twitch"><i class="bx bxl-twitch"></i></a>
